@@ -16,13 +16,7 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
 
-  let canvasmouse = Mouse.create(canvas.elt);
-  canvasmouse.pixelRatio = pixelDensity();
-  let options = {
-    mouse: canvasmouse
-  };
-  mConstraint = MouseConstraint.create(engine, options);
-  World.add(world, mConstraint);
+
 
   pendulum1 = new Pendulum(340, 450, "#0000FF");
   pendulum2 = new Pendulum(400, 450, "#FFFF00");
